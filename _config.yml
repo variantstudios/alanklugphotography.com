@@ -2,7 +2,7 @@
 title: "Alan Klug Photography"
 email: "team@variantstudios.com"
 description: "Alan Klug - photographer of Greece, Mexico, England, France and the US - photographys of Europe."
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /photos/
 url: "" # the base hostname & protocol for your site
 #timezone: America/Denver - Don't set for CloudCannon...for reasons.
 version: "3.2.1" # the version of jekyll
@@ -19,28 +19,28 @@ permalink: pretty
 
 # Pagination
 paginate: 10
-paginate_path: '/blog/:num/'
+paginate_path: '/photos/:num/'
 
 #Collections
 collections:
-  posts:
+  photos:
     output: true
-    permalink: '/blog/:title/'
+    permalink: '/photos/:title/'
   people:
     output: false
   categories:
     output: true
-    permalink: '/blog/:title/'
+    permalink: '/photos/:title/'
   tags:
     output: true
-    permalink: '/blog/:title/'
+    permalink: '/photos/:title/'
 
 defaults:
   -
     scope:
-      type: posts
+      type: photos
     values:
-      layout: post
+      layout: photos
       title:
       image_path:
       description:
@@ -49,9 +49,9 @@ defaults:
       tags:
 
 # typekit - Because we all need nice type faces.
-typekit:
+typekit: 'oty8wpk'
 
 # Google Analytics - What site isn't using it?!
-google_analytics_tracking_id:
+google_analytics_tracking_id: #UA-34283494-1
 
 exclude: ["vendor","node_modules","package.json","Gemfile","gulpfile.js","*.scss"]

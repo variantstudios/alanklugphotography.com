@@ -1,8 +1,8 @@
 ---
-title: Blog
-permalink: "/blog/"
-description: This is just a sample blog.
-layout: blog
+title: Photos
+permalink: "/photos/"
+description:
+layout: photos
 ---
 
 Perlucentibus ture fameque, pectora non neque percutit caelo tempora additur et
