@@ -1,24 +1,12 @@
 ---
-title: About
+title: About Alan Klug Photography
 permalink: "/about/"
-description: This is just a sample general page.
+description: About Alan Klug Photography.
 layout: page
 ---
 
-*Lorem* markdownum iacet figurae, *fert* heros, stetit generis! Vel *vagus sua*
-alvum ab rexit: inclinatoque callo ad condita valido.
+The photographs offered in this portfolio are hand printed by myself and limited to an edition of 250-300 images. They were made with a variety of medium and large format cameras exclusively on negative film, both color and black & white. Having worked at this for some twenty years it seems to me that specific brand names of equipment don't matter much; I'm not much of a camera buff. I believe strongly in three principles: 1) The old adage "F8 and be there", which means don't burden yourself with vast amounts of technique and equipment. Get out there and make pictures. 2) A photographer's most important tool is a very large trash can, and 3) Avoid looking for the next market; photograph what you care about.
 
-## Traxit fera fratris Horae ibis hic etiam
+The photographs are mounted and matted with archival materials (mattes are double, white ragboard) and are guaranteed. Please return within 30 days for a refund if for any reason you aren't pleased.
 
-Triticeas premente altum eget rediere *limite*. Non orientis hunc, surgunt
-vocem: [ac](http://www.googel.com) cadit quod, Boebes superat! Ut
-Phoebe obfuit effugit hic arte: scripsi quaterque plenissima at volucris
-visaque. Vanis Cinyreius tamen: deficit sub ignem, lumina.
-
-## Flamine sceleratus Amoris anxia Cymeli calorque mortale
-
-Est undas; [si quoque](http://google.com) et ignorat vidit. Pro
-incursu modis missi lunae ad dicta: neganda Delius est. Utque et cadendum erat;
-qui **causas Thisbe terra** sacra esse quae sanguine, decursa sed structa ab
-beatam ut! Moderato fluminis coniungere ambae et certa carinae Macareus, sic et
-ista neque mox ventis regnare coepit.
+All photographs in this portfolio are copyright of Alan Klug.

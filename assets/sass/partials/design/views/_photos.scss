@@ -1,8 +1,8 @@
-.blog-wrapper {
-  .blog-item {
+.photos-wrapper {
+  .photos-item {
     padding-bottom: 2em;
   }
-  .right-blog {
+  .right-photos {
     h3 {
       margin-top: 0;
     }
@@ -35,7 +35,7 @@
     .left-image {
       @include grid-span(3, 1);
     }
-    .right-blog {
+    .right-photos {
       @include grid-span(9, 4);
     }
   }
