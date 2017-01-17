@@ -11,7 +11,9 @@ author.email: "team@variantstudios.com"
 
 # Gems for plugins
 gems:
+
   - jekyll-paginate # Needed to add paginate on Jekyll ver 3+
+  - jekyll-paginate-category
   - jekyll-sitemap # Simple jekyll plugin that creates a sitemap.xml file and you can exclude files by adding 'sitemap:false' to the frontmatter of any file(s).
 
 # Permalinks
@@ -20,6 +22,9 @@ permalink: pretty
 # Pagination
 paginate: 10
 paginate_path: '/photos/:num/'
+category_dir: "categories"
+category_layout: "photo.html"
+
 
 #Collections
 collections:
