@@ -1,4 +1,23 @@
+.photo-wrapper {
+    .photo {
+            text-align: center;
+            img{
+                margin: 0 auto;
+                border: solid 20px #fff;
+            }
+    }
+}
+
 .photos-wrapper {
+
+  .photo {
+      float: left;
+      margin: 0 1em 1em 0;
+      width: 200px;
+  }
+
+
+
   .photos-item {
     padding-bottom: 2em;
   }

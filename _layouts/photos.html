@@ -5,18 +5,15 @@ layout: page
 <section class="photos-preface">{{ content }}</section>
 
 <section class="photos-wrapper">
+
   {% for post in site.photos %}
-    <div class="photos-item clearfix">
-      <div class="left-image">
+      <div class="photo">
         {% if post.image_path %}
           <a href="{{ post.url }}"><img src="{{ post.image_path }}" alt="{{ post.title }}"></a>
         {% endif %}
       </div>
-      <div class="right-photos">
-        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-      </div>
-    </div>
   {% endfor %}
+
   <!-- Pagination links -->
   {% if paginator.total_pages > 1 %}
     <div class="pagination">

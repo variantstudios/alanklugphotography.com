@@ -6,13 +6,13 @@ $rem: 16px;
 
 // Colors
 // Sites Main Colors
-$color-one: #0f7abd; // Blue
-$color-two: #ef9603; // Orange
+$color-one: #333; // Blue
+$color-two: #666; // Orange
 $color-three: #858585; // Grey
 
 // Regions - Use Site Main Colors variables for these if they fit
 $nav-bg: $color-three;
-$site-bg: #fff;
+$site-bg: #f2eee4;
 $header-bg: #fff;
 $main-bg: #fff;
 $footer-bg: #272727;
@@ -23,7 +23,7 @@ $nav-border: #CFCFCF;
 $body-copy-color: #3D3D3D;
 $heading-color: #272727;
 
-$link           : #0F7ABD;
+$link           : #333;
 $visited        : darken($link, 10%);
 $hover          : lighten($link, 10%);
 
@@ -63,4 +63,3 @@ $no-query: $bp-medium, 'no-query' '.no-mq';
 $breakpoint-no-query-fallbacks: true;
 $breakpoint-to-ems: true;
 $breakpoints: '';
-

@@ -1,30 +1,30 @@
 ---
-layout: default
+layout: page
 ---
 
 
 <main>
-  <section class="photos-wrapper wrap">
-    <div class="photos-item clearfix">
-      <p><a href="/photos/">< Back to all photos</a></p>
-      <div class="left-image">
-        {% if page.image_path %}
-          <img src="{{ page.image_path }}" alt="{{ page.title }}">
+  <section class="photo-wrapper wrap">
+
+      <nav class="pagination" role="navigation">
+        {% if page.previous %}
+          <a href="{{ page.previous.url }}" class="" title="{{ page.previous.title }}">Older</a>
         {% endif %}
-      </div>
-      <div class="right-photos">
-        <a href="{{ post.url }}"><h3>{{ page.title }}</h3></a>
-        
-        <p>{{ content }}</p>
-      </div>
+        {% if page.next %}
+          <a href="{{ page.next.url }}" class="" title="{{ page.next.title }}">Newer</a>
+        {% endif %}
+      </nav><!-- /.pagination -->
+
+
+    <div class="">
+        <div class="photo clearfix">
+              <img src="{{ page.image_path }}" alt="{{ page.title }}">
+          </div>
     </div>
-    <nav class="pagination" role="navigation">
-      {% if page.previous %}
-        <a href="{{ page.previous.url }}" class="" title="{{ page.previous.title }}">Older</a>
-      {% endif %}
-      {% if page.next %}
-        <a href="{{ page.next.url }}" class="" title="{{ page.next.title }}">Newer</a>
-      {% endif %}
-    </nav><!-- /.pagination -->
+
+    <p><a href="/photos/">< Back to all photos</a></p>
+
+
+
   </section>
 </main>
