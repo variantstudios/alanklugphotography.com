@@ -9,8 +9,9 @@
     margin: 0;
     display: block;
     padding: 0;
+    text-align: left;
     @include breakpoint($bp-medium, $no-query: '.no-mq') {
-      display: inline-block;
+      display: block;
       line-height: 3em;
     }
     a {

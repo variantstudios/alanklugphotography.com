@@ -1,3 +1,16 @@
 .footer-wrapper {
   //background: $footer-bg;
+  text-align: center;
+  .left {
+      @include breakpoint($bp-medium, $no-query: '.no-mq') {
+        @include grid-span(6, 1, $gutter:0);
+        text-align: left;
+      }
+  }
+  .right {
+      @include breakpoint($bp-medium, $no-query: '.no-mq') {
+        @include grid-span(6, 7, $gutter:0);
+        text-align: right;
+      }
+  }
 }
