@@ -31,12 +31,7 @@ collections:
   photos:
     output: true
     permalink: '/photos/:title/'
-  people:
-    output: false
   categories:
-    output: true
-    permalink: '/photos/:title/'
-  tags:
     output: true
     permalink: '/photos/:title/'
 
@@ -49,9 +44,7 @@ defaults:
       title:
       image_path:
       description:
-      author:
       category:
-      tags:
 
 # typekit - Because we all need nice type faces.
 typekit: 'oty8wpk'
