@@ -50,6 +50,6 @@ defaults:
 typekit: 'oty8wpk'
 
 # Google Analytics - What site isn't using it?!
-google_analytics_tracking_id: #UA-34283494-1
+google_analytics_tracking_id: #new: UA-80029-47 - old: UA-34283494-1
 
 exclude: ["vendor","node_modules","package.json","Gemfile","gulpfile.js","*.scss"]

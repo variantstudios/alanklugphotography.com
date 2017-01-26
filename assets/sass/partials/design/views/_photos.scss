@@ -1,4 +1,16 @@
 .photo-wrapper {
+    position: relative;
+    nav.pagination {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        .newer {
+            float: right;
+        }
+        .older {
+            float: left;
+        }
+    }
     .photo {
             text-align: center;
             img{

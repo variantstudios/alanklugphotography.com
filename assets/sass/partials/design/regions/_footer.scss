@@ -1,6 +1,17 @@
 .footer-wrapper {
   //background: $footer-bg;
   text-align: center;
+  p {
+      font-size: .8em;
+      color: #888;
+      a {
+          color: #888;
+          text-decoration: none;
+          &:hover {
+              text-decoration: underline;
+          }
+      }
+  }
   .left {
       @include breakpoint($bp-medium, $no-query: '.no-mq') {
         @include grid-span(6, 1, $gutter:0);

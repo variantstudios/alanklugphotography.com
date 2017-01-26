@@ -475,8 +475,22 @@ ul.pager li a:visited {
 .footer-wrapper {
   text-align: center;
 }
+/* line 4, ../sass/partials/design/regions/_footer.scss */
+.footer-wrapper p {
+  font-size: .8em;
+  color: #888;
+}
+/* line 7, ../sass/partials/design/regions/_footer.scss */
+.footer-wrapper p a {
+  color: #888;
+  text-decoration: none;
+}
+/* line 10, ../sass/partials/design/regions/_footer.scss */
+.footer-wrapper p a:hover {
+  text-decoration: underline;
+}
 @media (min-width: 50em) {
-  /* line 4, ../sass/partials/design/regions/_footer.scss */
+  /* line 15, ../sass/partials/design/regions/_footer.scss */
   .footer-wrapper .left {
     width: 50%;
     float: left;
@@ -496,7 +510,7 @@ ul.pager li a:visited {
   text-align: left;
 }
 @media (min-width: 50em) {
-  /* line 10, ../sass/partials/design/regions/_footer.scss */
+  /* line 21, ../sass/partials/design/regions/_footer.scss */
   .footer-wrapper .right {
     width: 50%;
     float: right;
@@ -689,31 +703,49 @@ main, header, footer, section, aside {
   clear: none;
 }
 
-/* line 2, ../sass/partials/design/views/_photos.scss */
+/* line 1, ../sass/partials/design/views/_photos.scss */
+.photo-wrapper {
+  position: relative;
+}
+/* line 3, ../sass/partials/design/views/_photos.scss */
+.photo-wrapper nav.pagination {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+/* line 7, ../sass/partials/design/views/_photos.scss */
+.photo-wrapper nav.pagination .newer {
+  float: right;
+}
+/* line 10, ../sass/partials/design/views/_photos.scss */
+.photo-wrapper nav.pagination .older {
+  float: left;
+}
+/* line 14, ../sass/partials/design/views/_photos.scss */
 .photo-wrapper .photo {
   text-align: center;
 }
-/* line 4, ../sass/partials/design/views/_photos.scss */
+/* line 16, ../sass/partials/design/views/_photos.scss */
 .photo-wrapper .photo img {
   margin: 0 auto;
   border: solid 20px #fff;
 }
 
-/* line 13, ../sass/partials/design/views/_photos.scss */
+/* line 25, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .photo {
   float: left;
   margin: 0 1em 1em 0;
   width: 200px;
 }
-/* line 21, ../sass/partials/design/views/_photos.scss */
+/* line 33, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .photos-item {
   padding-bottom: 2em;
 }
-/* line 25, ../sass/partials/design/views/_photos.scss */
+/* line 37, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos h3 {
   margin-top: 0;
 }
-/* line 28, ../sass/partials/design/views/_photos.scss */
+/* line 40, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos .person {
   width: 25px;
   height: 25px;
@@ -721,29 +753,29 @@ main, header, footer, section, aside {
   margin-bottom: -5px;
   border: 2px solid #333333;
 }
-/* line 35, ../sass/partials/design/views/_photos.scss */
+/* line 47, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul {
   list-style: none;
   padding: 0;
 }
-/* line 38, ../sass/partials/design/views/_photos.scss */
+/* line 50, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul li {
   display: inline-block;
 }
-/* line 40, ../sass/partials/design/views/_photos.scss */
+/* line 52, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul li.tag-label {
   background: #333333;
   padding: 2px 5px;
   border-radius: 3px;
   font-size: .8rem;
 }
-/* line 45, ../sass/partials/design/views/_photos.scss */
+/* line 57, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul li.tag-label a, .photos-wrapper .right-photos ul li.tag-label a:visited {
   color: #f1f1f1;
   text-decoration: none;
 }
 @media (min-width: 50em) {
-  /* line 54, ../sass/partials/design/views/_photos.scss */
+  /* line 66, ../sass/partials/design/views/_photos.scss */
   .photos-wrapper .left-image {
     width: 23.40426%;
     float: left;
@@ -751,7 +783,7 @@ main, header, footer, section, aside {
     margin-left: 0;
     clear: none;
   }
-  /* line 57, ../sass/partials/design/views/_photos.scss */
+  /* line 69, ../sass/partials/design/views/_photos.scss */
   .photos-wrapper .right-photos {
     width: 74.46809%;
     float: right;
@@ -760,7 +792,7 @@ main, header, footer, section, aside {
     clear: none;
   }
 }
-/* line 54, ../sass/partials/design/views/_photos.scss */
+/* line 66, ../sass/partials/design/views/_photos.scss */
 .no-mq .photos-wrapper .left-image {
   width: 23.40426%;
   float: left;
@@ -768,7 +800,7 @@ main, header, footer, section, aside {
   margin-left: 0;
   clear: none;
 }
-/* line 57, ../sass/partials/design/views/_photos.scss */
+/* line 69, ../sass/partials/design/views/_photos.scss */
 .no-mq .photos-wrapper .right-photos {
   width: 74.46809%;
   float: right;
