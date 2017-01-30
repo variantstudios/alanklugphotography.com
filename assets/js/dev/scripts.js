@@ -17,17 +17,18 @@ $(document).ready(function() {
 
         // SnipCart: Size
         $("#select-size").change(function() {
-            var size = $("#select-size").val();
+            //var size = $("#select-size").val();
+            var size = $(this).find(':selected').attr('data-item-title');
             var sizeText = $(this).find(':selected').attr('data-item-title');
-            var desc = $(".snipcart-add-item").attr('data-item-description');
             var price  = $(this).find(':selected').attr('data-item-price');
-            //console.log(price);
+            var desc = $(".snipcart-add-item").attr('data-item-description');
+        
             $(".snipcart-add-item").attr('data-item-id', size);
             $('.snipcart-add-item').removeAttr('disabled');
             // Optionally prepend the selected size to the product's description.
             $(".snipcart-add-item").attr('data-item-description', sizeText + ': ' + desc);
             $(".snipcart-add-item").attr('data-item-price', price + '0');
-            $('span.price').html('$' + price + '0');
+            $('span.price').html('$' + price);
         });
         // SnipCart: Quantity
         $("#qty").change(function() {
