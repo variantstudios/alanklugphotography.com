@@ -21,47 +21,16 @@ layout: page
               <img src="{{ page.image_path }}" alt="{{ page.title }}">
           </div>
     </div>
-
+{% assign photo-id = page.title |  replace:' ','-' | downcase | strip %}
     <select id="select-size">
-             <option default>Select a Size</option>
-         <option value="REPLACEME-6-7-matte" data-item-title="" data-item-price="60.00">6" X 7" Print (14" X 18" Matte) - $60.0</option>
-         <option value="REPLACEME-6-7-print" data-item-title="" data-item-price="120.00">6" X 7" Print (Print Framed) - $120.0</option>
-         <option value="REPLACEME-12-15-matte" data-item-title="" data-item-price="150.00">12" X 15" Print (20" X 24" Matte) - $150.0</option>
-         <option value="REPLACEME-12-15-framed" data-item-title="" data-item-price="210.00">12" X 15" Print Framed - $210.0</option>
-         <option value="REPLACEME-20-24-print" data-item-title="" data-item-price="170.00">20" X 24" Print (26" X 32" Matte) - $170.0</option>
+    <option default>Select a Size</option>
+         <option value="{{ photo-id }}-6-7-matte" data-item-title="{{ photo-id }}-6-7-matte" data-item-price="60.00">6" X 7" Print (14" X 18" Matte) - $60.00</option>
+         <option value="{{ photo-id }}-6-7-print" data-item-title="{{ photo-id }}-6-7-print" data-item-price="120.00">6" X 7" Print (Print Framed) - $120.00</option>
+         <option value="{{ photo-id }}-12-15-matte" data-item-title="{{ photo-id }}-12-15-matte" data-item-price="150.00">12" X 15" Print (20" X 24" Matte) - $150.00</option>
+         <option value="{{ photo-id }}-12-15-framed" data-item-title="{{ photo-id }}-12-15-framed" data-item-price="210.00">12" X 15" Print Framed - $210.00</option>
+         <option value="{{ photo-id }}-20-24-print" data-item-title="{{ photo-id }}-20-24-print" data-item-price="170.00">20" X 24" Print (26" X 32" Matte) - $170.00</option>
      </select>
 
-<!--
-<button class="snipcart-add-item"
-  data-item-name="{{ product.name }}"
-  data-item-id="{{ product.sku }}"
-  data-item-image="{{ product.image }}"
-  data-item-url="{{ site.baseurl }}"
-  data-item-price="{{ product.price }}">
-  Buy it for {{ product.price }} $
-</button>
-
-<a href="#"
-  class="snipcart-add-item"
-  data-item-id="2"
-  data-item-name="Oh bacon!"
-  data-item-price="10.00"
-  data-item-weight="20"
-  data-item-url="http://myapp.com/products/bacon"
-  data-item-custom1-name="Flavor"
-  data-item-custom1-options="Natural|Smoked[+1.00]"
-  data-item-custom2-name="Cut size"
-  data-item-custom2-options="Regular|Large[+3.00]">
-    Buy now
-</a>
--->
-
-
-           <!-- {% for variation in page.variations %}
-         <option value="{{variation.id}}"
-         data-item-title="{{variation.title}}" data-item-price="{{variation.price}}">{{variation.title}} - ${{variation.price}}</option>
-         {% endfor %}
-     </select> -->
      <input type="number" name="qty" id="qty" value="1" size="2">
 
        <button class="snipcart-add-item"
@@ -70,9 +39,9 @@ layout: page
          data-item-id=""
          data-item-image="{{ page.image }}"
          data-item-url="{{ site.url }}/products.json"
-         data-item-weight="{{ page.weight}}"
+         data-item-weight=""
          data-item-price=""
-         data-item-description="{{ page.short_description }}">
+         data-item-description="{{ page.description }}">
          Buy Now
        </button>
        <span class="price"></span>
