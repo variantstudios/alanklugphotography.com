@@ -16,6 +16,8 @@ layout: page
 {% assign type = site.italy-slovenia %}
 {% elsif page.url contains "france"%}
 {% assign type = site.france%}
+{% elsif page.url contains "england"%}
+{% assign type = site.england%}
 {% endif %}
 {% assign sorted = type | sort: 'order_number' %}
   {% for post in sorted %}
