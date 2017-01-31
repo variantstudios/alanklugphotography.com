@@ -9,6 +9,9 @@ version: "3.2.1" # the version of jekyll
 author.name: "Variant Studios"
 author.email: "team@variantstudios.com"
 
+#CloudCannon defaults
+uploads_dir: "assets/images"
+
 # Gems for plugins
 gems:
 
@@ -22,29 +25,25 @@ permalink: pretty
 # Pagination
 paginate: 10
 paginate_path: '/photos/:num/'
-category_dir: "categories"
-category_layout: "photo.html"
 
 
 #Collections
 collections:
-  photos:
+  usa:
     output: true
-    permalink: '/photos/:title/'
-  categories:
-    output: true
-    permalink: '/photos/:title/'
+    permalink: '/usa/:title/'
 
 defaults:
   -
     scope:
-      type: photos
+      type: usa
     values:
-      layout: photos
+      layout: photo
       title:
+      id_number:
       image_path:
       description:
-      category:
+      order_number: 0
 
 # typekit - Because we all need nice type faces.
 typekit: 'oty8wpk'

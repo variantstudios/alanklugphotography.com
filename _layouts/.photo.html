@@ -1,0 +1,54 @@
+---
+layout: page
+---
+
+
+<main>
+  <section class="photo-wrapper wrap">
+
+      <nav class="pagination" role="navigation">
+        {% if page.previous %}
+          <a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="older">Older</a>
+        {% endif %}
+        {% if page.next %}
+          <a href="{{ page.next.url }}" title="{{ page.next.title }}" class="newer">Newer</a>
+        {% endif %}
+      </nav><!-- /.pagination -->
+
+
+    <div class="">
+        <div class="photo clearfix">
+              <img src="{{ page.image_path }}" alt="{{ page.title }}">
+          </div>
+    </div>
+{% assign photo-id = page.title |  replace:' ','-' | downcase | strip %}
+    <select id="select-size">
+    <option default>Select a Size</option>
+         <option value="{{ photo-id }}-6-7-matte" data-item-title="{{ photo-id }}-6-7-matte" data-item-price="60.00">6" X 7" Print (14" X 18" Matte) - $60.00</option>
+         <option value="{{ photo-id }}-6-7-print" data-item-title="{{ photo-id }}-6-7-print" data-item-price="120.00">6" X 7" Print (Print Framed) - $120.00</option>
+         <option value="{{ photo-id }}-12-15-matte" data-item-title="{{ photo-id }}-12-15-matte" data-item-price="150.00">12" X 15" Print (20" X 24" Matte) - $150.00</option>
+         <option value="{{ photo-id }}-12-15-framed" data-item-title="{{ photo-id }}-12-15-framed" data-item-price="210.00">12" X 15" Print Framed - $210.00</option>
+         <option value="{{ photo-id }}-20-24-print" data-item-title="{{ photo-id }}-20-24-print" data-item-price="170.00">20" X 24" Print (26" X 32" Matte) - $170.00</option>
+     </select>
+
+     <input type="number" name="qty" id="qty" value="1" size="2">
+
+       <button class="snipcart-add-item"
+        data-item-quantity="1"
+         data-item-name="{{ page.title }}"
+         data-item-id=""
+         data-item-image="{{ page.image }}"
+         data-item-url="{{ site.url }}/products.json"
+         data-item-weight=""
+         data-item-price=""
+         data-item-description="{{ page.description }}">
+         Buy Now
+       </button>
+       <span class="price"></span>
+
+    <p><a href="/photos/">< Back to all photos</a></p>
+
+
+
+  </section>
+</main>

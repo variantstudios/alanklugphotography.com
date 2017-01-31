@@ -2,6 +2,28 @@
 <script>window.jQuery || document.write('<script src="/assets/js/prod/jquery-1-11-1.min.js"><\/script>')</script>
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="{{ site.snipcart-key }}"></script>
 
+<script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
+<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
+<script type="text/javascript">
+// init Masonry
+var $grid = $('.photos-wrapper').masonry({
+// options...
+itemSelector: '.photo',
+//percentPosition: true,
+columnWidth: '.grid-sizer',
+//columnWidth: 10,
+//gutter: 10,
+//fitWidth: true
+//layoutMode: 'masonry'
+
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
+
+</script>
+
 <script src="/assets/js/prod/scripts.js"></script>
 
 {% if site.google_analytics_tracking_id %}
