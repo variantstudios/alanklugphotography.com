@@ -38,6 +38,9 @@ collections:
   greece:
     output: true
     permalink: '/greece/:title/'
+  italy-slovenia:
+    output: true
+    permalink: '/greece/:title/'
 
 defaults:
   -
@@ -61,6 +64,15 @@ defaults:
       order_number: 0
     scope:
       type: greece
+    values:
+      layout: photo
+      title:
+      id_number:
+      image_path:
+      description:
+      order_number: 0
+    scope:
+      type: italy-slovenia
     values:
       layout: photo
       title:
