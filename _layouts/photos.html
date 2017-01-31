@@ -2,11 +2,12 @@
 layout: page
 ---
 
-<section class="photos-preface">{{ content }}</section>
+<!-- <section class="photos-preface">{{ content }}</section> -->
 
 <section class="photos-wrapper">
-
-  {% for post in site.photos %}
+<div class="grid-sizer"></div>
+{% assign sorted = site.usa | sort: 'order_number' %}
+  {% for post in sorted %}
       <div class="photo">
         {% if post.image_path %}
           <a href="{{ post.url }}"><img src="{{ post.image_path }}" alt="{{ post.title }}"></a>
