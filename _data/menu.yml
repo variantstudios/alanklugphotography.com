@@ -2,15 +2,15 @@
   url: /about/
 - text: U.S.A.
   url: /usa/
-- text: Mexico
-  url: /mexico/
-- text: Greece
-  url: /greece/
-- text: Italy &amp; Slovenia
+- text: 'England, Ireland &amp; Scotland'
+  url: /england/
+- text: 'Italy &amp; Slovenia'
   url: /italy-slovenia/
 - text: France
   url: /france/
-- text: England
-  url: /england/
+- text: Greece
+  url: /greece/
+- text: Mexico
+  url: /mexico/
 - text: Contact
   url: /contact/
