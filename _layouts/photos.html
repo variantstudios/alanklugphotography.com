@@ -8,8 +8,10 @@ layout: page
 <div class="grid-sizer"></div>
 {% if page.url contains "usa" %}
 {% assign type = site.usa %}
-{% else if page.url contains "mexico"%}
+{% elsif page.url contains "mexico"%}
 {% assign type = site.mexico %}
+{% elsif page.url contains "greece"%}
+{% assign type = site.greece %}
 {% endif %}
 {% assign sorted = type | sort: 'order_number' %}
   {% for post in sorted %}
