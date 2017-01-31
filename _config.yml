@@ -32,6 +32,9 @@ collections:
   usa:
     output: true
     permalink: '/usa/:title/'
+  mexico:
+    output: true
+    permalink: '/mexico/:title/'
 
 defaults:
   -
@@ -44,7 +47,15 @@ defaults:
       image_path:
       description:
       order_number: 0
-
+    scope:
+      type: mexico
+    values:
+      layout: photo
+      title:
+      id_number:
+      image_path:
+      description:
+      order_number: 0
 # typekit - Because we all need nice type faces.
 typekit: 'oty8wpk'
 
