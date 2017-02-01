@@ -16,15 +16,20 @@
     }
     a {
       font-weight: 500;
-      font-size: 1em;
+      font-size: .9em;
       transition: color .5s ease;
       padding: .75em 1em;
       display: block;
       color: #000;
       text-transform: uppercase;
+      line-height: 2em;
+      margin-bottom: 1em;
       @include breakpoint($bp-medium, $no-query: '.no-mq') {
         margin-left: 1.5em;
         padding: 0;
+        &.active {
+            font-weight: bold;
+        }
       }
       &:hover {
         color: $color-one;
