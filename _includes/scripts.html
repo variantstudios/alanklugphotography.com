@@ -24,6 +24,26 @@ $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
 
+
+// Photo gallery keyboard pagination controls
+document.onkeydown = function(e) {
+     var newer = $('.newer').attr('href');
+     var older = $('.older').attr('href');
+    switch (e.keyCode) {
+        case 37:
+            console.log('left');
+            location.href=older;
+            if((older) !== undefined){ location.href=older; };
+            break;
+        case 38:
+            console.log('up');
+            break;
+        case 39:
+            console.log('right');
+            if((newer) !== undefined){ location.href=newer; };
+            break;
+    }
+};
 </script>
 
 <script src="/assets/js/prod/scripts.js"></script>

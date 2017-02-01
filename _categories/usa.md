@@ -1,4 +1,0 @@
----
-title: USA
-layout: category
----
