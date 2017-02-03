@@ -6,11 +6,18 @@
 <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
 <script type="text/javascript">
 // init Masonry
+
+// $('.box').find('img').each(function () {
+//     var percent = $(this).width() / container.width() * 50;
+//     $(this).closest('.photo').css('max-width', percent + '%');
+// });
+
 var $grid = $('.photos-wrapper').masonry({
 // options...
 itemSelector: '.photo',
-columnWidth: '.grid-sizer',
-transitionDuration: '0.2s',
+// columnWidth: '.grid-sizer',
+// transitionDuration: '0.2s',
+// percentPosition: true
 });
 // layout Masonry after each image loads
 $grid.imagesLoaded().progress( function() {
@@ -39,6 +46,36 @@ document.onkeydown = function(e) {
             break;
     }
 };
+
+$(".snipcart-summary").css('display', 'none');
+
+Snipcart.subscribe('item.added', function (item) {
+    console.log("added");
+    $(".snipcart-summary").css('display', 'block');
+});
+Snipcart.subscribe('cart.ready', function (data) {
+    console.log(data.order);
+    if (data.order.items.length != 0) {
+        //console.log('yes');
+        $(".snipcart-summary").css('display', 'block');
+    } else {
+        //console.log('no');
+        $(".snipcart-summary").css('display', 'none');
+    }
+});
+
+// Snipcart.subscribe('cart.closed', function() {
+//     Snipcart.subscribe('cart.ready', function (data) {
+//         console.log(data.order);
+//         if (data.order.items.length != 0) {
+//             console.log('yes');
+//             $(".snipcart-summary").css('display', 'block');
+//         } else {
+//             console.log('no');
+//             $(".snipcart-summary").css('display', 'none');
+//         }
+//     });
+// });
 </script>
 
 <script src="/assets/js/prod/scripts.js"></script>

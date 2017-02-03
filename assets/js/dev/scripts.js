@@ -20,4 +20,8 @@ $(document).ready(function() {
     //     window.location.href = url;
     // });
 
+    // window.addEventListener("beforeunload", function () {
+    //     document.desktop-right.classList.add("animate-out");
+    // });
+
 });
