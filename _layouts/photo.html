@@ -19,7 +19,9 @@ layout: page
         <div class="photo clearfix">
               <img src="{{ page.image_path }}" alt="{{ page.title }}">
 
-          <span class="left">{{ page.title }}</span> <span class="right">{{ page.id_number }}</span>
+          <div class="">
+              <span class="left">{{ page.title }}</span> <span class="right">{{ page.id_number }}</span>
+          </div>
  </div>
     <div class="buy-now">
         {% assign photo-id = page.title |  replace:' ','-' | downcase | strip %}

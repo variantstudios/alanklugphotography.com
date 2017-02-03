@@ -13,21 +13,47 @@
 
 //remove footer
 .snipcart-overwrite #snipcart-footer {
-    display: none;
+    //display: none;
 }
 
 //logo
 .snipcart-overwrite #snipcart-header #snipcart-title {
-    color: #50bcd0;
-    background: url('../images/snipcart-blue.png') no-repeat 0 center;
-    padding-left: 60px;
+    color: #f2eee4;
+    background: url(../images/logo.png) no-repeat 0 center;
+    padding-left: 200px;
 }
 
 .snipcart-overwrite ul#snipcart-steps li span.snipcart-step-number, .snip-layout .snip-form__label,
 p.snip-step__label, h2.snip-product__name, p.snip-product__description, .snip-layout th,
-a#snipcart-show-discount-box, .snipcart-overwrite .snip-btn.snip-btn--left {
+a#snipcart-show-discount-box, .snipcart-overwrite .snip-btn.snip-btn--left,
+.snipcart-overwrite .snip-static__title, .snipcart-overwrite select#snip-expirationMonth,
+.snipcart-overwrite select#snip-expirationYear, .snipcart-overwrite select#snip-type,
+.snipcart-overwrite button.snip-btn.snip-btn--right {
     font-family: $font-family;
 }
-.snip-layout th {
 
+
+.snipcart-overwrite .snip-layout .snip-header__total {
+        background: #525252;
+        .snip-header__total-label {
+            color: #111;
+            font-family: $font-family;
+        }
+        #snipcart-amount {
+            font-family: $font-family;
+        }
+}
+
+// close icon
+.snip-layout .snip-ico {
+    color: #333;
+}
+
+.snipcart-overwrite .snip-layout .snip-header__total {
+    padding: 0em 1em;
+    float: right;
+    margin-right: 2em;
+}
+.snipcart-overwrite .snip-layout .snip-header {
+    background: #f2eee4;
 }
