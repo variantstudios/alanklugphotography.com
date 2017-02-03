@@ -54,16 +54,47 @@
 
     /* ---- .grid-item ---- */
 
-    .grid-sizer,
+    /*.grid-sizer,
     .photo {
       width: 30%;
       margin: 0 20px 20px 0;
     }
-
-    //.gutter-sizer { width: 4%; }
-
     .photo {
       float: left;
+    }
+    .photo img {
+      display: block;
+      max-width: 100%;
+      border: solid 10px #fff;
+    }*/
+
+    .photo {
+      @include box-sizing(border-box);
+      //background: #fff;
+      //padding: 15px;
+      position: relative;
+      //width: 22%;
+      width: 30%;
+      padding: 10px 0 10px 20px;
+      //margin: 0 20px 20px 0;
+      @media (min-width: 800px){
+        width: 30%;
+        padding: 10px 0 10px 20px;
+      }
+      @media (max-width: 700px){
+        width: 48%;
+        padding: 10px 0 10px 20px;
+      }
+      /*@media (max-width: 600px){
+        width: 50%;
+      }*/
+      @media (max-width: 400px){
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
 
     .photo img {
@@ -71,13 +102,6 @@
       max-width: 100%;
       border: solid 10px #fff;
     }
-
-  /*.photo {
-      float: left;
-      margin: 0 1em 1em 0;
-      width: 30%;
-  }*/
-
 
 
   .photos-item {

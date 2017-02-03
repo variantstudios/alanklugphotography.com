@@ -448,7 +448,7 @@ ul.pager li a:visited {
 }
 /* line 54, ../sass/partials/design/blocks/_main-navigation.scss */
 .js .main-nav .menu.show {
-  max-height: 500px;
+  max-height: 700px;
 }
 
 /* line 58, ../sass/partials/design/blocks/_main-navigation.scss */
@@ -499,9 +499,10 @@ ul.pager li a:visited {
 /* line 10, ../sass/partials/design/pages/_photos.scss */
 .buy-now {
   text-align: center;
+  margin-top: 1.5em;
 }
 
-/* line 14, ../sass/partials/design/pages/_photos.scss */
+/* line 15, ../sass/partials/design/pages/_photos.scss */
 a.snipcart-add-item {
   border: solid 1px #333;
   padding: .5em .75em;
@@ -512,7 +513,7 @@ a.snipcart-add-item {
           transition: ease-in-out all 600ms;
   background: #f2eee4;
 }
-/* line 22, ../sass/partials/design/pages/_photos.scss */
+/* line 23, ../sass/partials/design/pages/_photos.scss */
 a.snipcart-add-item:hover {
   color: #f2eee4;
   border: solid 1px #333;
@@ -525,6 +526,41 @@ body.about main img {
   margin: 0 1em 0 0;
 }
 
+/* line 5, ../sass/partials/design/pages/_front.scss */
+.animate-in {
+  -webkit-animation: fadeIn 1s ease-in;
+  animation: fadeIn 1s ease-in;
+}
+
+/* line 10, ../sass/partials/design/pages/_front.scss */
+.animate-out {
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 17, ../sass/partials/design/pages/_front.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 18, ../sass/partials/design/pages/_front.scss */
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  /* line 22, ../sass/partials/design/pages/_front.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 23, ../sass/partials/design/pages/_front.scss */
+  to {
+    opacity: 1;
+  }
+}
 /* line 1, ../sass/partials/design/regions/_footer.scss */
 .footer-wrapper {
   text-align: center;
@@ -822,10 +858,18 @@ main, header, footer, section, aside {
 .photos-wrapper {
   /* clear fix */
   /* ---- .grid-item ---- */
-  /*.photo {
-      float: left;
-      margin: 0 1em 1em 0;
-      width: 30%;
+  /*.grid-sizer,
+  .photo {
+    width: 30%;
+    margin: 0 20px 20px 0;
+  }
+  .photo {
+    float: left;
+  }
+  .photo img {
+    display: block;
+    max-width: 100%;
+    border: solid 10px #fff;
   }*/
 }
 /* line 49, ../sass/partials/design/views/_photos.scss */
@@ -834,31 +878,57 @@ main, header, footer, section, aside {
   display: block;
   clear: both;
 }
-/* line 57, ../sass/partials/design/views/_photos.scss */
-.photos-wrapper .grid-sizer,
+/* line 71, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .photo {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
   width: 30%;
-  margin: 0 20px 20px 0;
+  padding: 10px 0 10px 20px;
+  /*@media (max-width: 600px){
+    width: 50%;
+  }*/
 }
-/* line 65, ../sass/partials/design/views/_photos.scss */
-.photos-wrapper .photo {
-  float: left;
+@media (min-width: 800px) {
+  /* line 71, ../sass/partials/design/views/_photos.scss */
+  .photos-wrapper .photo {
+    width: 30%;
+    padding: 10px 0 10px 20px;
+  }
 }
-/* line 69, ../sass/partials/design/views/_photos.scss */
+@media (max-width: 700px) {
+  /* line 71, ../sass/partials/design/views/_photos.scss */
+  .photos-wrapper .photo {
+    width: 48%;
+    padding: 10px 0 10px 20px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 71, ../sass/partials/design/views/_photos.scss */
+  .photos-wrapper .photo {
+    width: 100%;
+  }
+}
+/* line 94, ../sass/partials/design/views/_photos.scss */
+.photos-wrapper .photo img {
+  width: 100%;
+  height: auto;
+}
+/* line 100, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .photo img {
   display: block;
   max-width: 100%;
   border: solid 10px #fff;
 }
-/* line 83, ../sass/partials/design/views/_photos.scss */
+/* line 107, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .photos-item {
   padding-bottom: 2em;
 }
-/* line 87, ../sass/partials/design/views/_photos.scss */
+/* line 111, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos h3 {
   margin-top: 0;
 }
-/* line 90, ../sass/partials/design/views/_photos.scss */
+/* line 114, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos .person {
   width: 25px;
   height: 25px;
@@ -866,29 +936,29 @@ main, header, footer, section, aside {
   margin-bottom: -5px;
   border: 2px solid #333333;
 }
-/* line 97, ../sass/partials/design/views/_photos.scss */
+/* line 121, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul {
   list-style: none;
   padding: 0;
 }
-/* line 100, ../sass/partials/design/views/_photos.scss */
+/* line 124, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul li {
   display: inline-block;
 }
-/* line 102, ../sass/partials/design/views/_photos.scss */
+/* line 126, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul li.tag-label {
   background: #333333;
   padding: 2px 5px;
   border-radius: 3px;
   font-size: .8rem;
 }
-/* line 107, ../sass/partials/design/views/_photos.scss */
+/* line 131, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul li.tag-label a, .photos-wrapper .right-photos ul li.tag-label a:visited {
   color: #f1f1f1;
   text-decoration: none;
 }
 @media (min-width: 50em) {
-  /* line 116, ../sass/partials/design/views/_photos.scss */
+  /* line 140, ../sass/partials/design/views/_photos.scss */
   .photos-wrapper .left-image {
     width: 23.40426%;
     float: left;
@@ -896,7 +966,7 @@ main, header, footer, section, aside {
     margin-left: 0;
     clear: none;
   }
-  /* line 119, ../sass/partials/design/views/_photos.scss */
+  /* line 143, ../sass/partials/design/views/_photos.scss */
   .photos-wrapper .right-photos {
     width: 74.46809%;
     float: right;
@@ -905,7 +975,7 @@ main, header, footer, section, aside {
     clear: none;
   }
 }
-/* line 116, ../sass/partials/design/views/_photos.scss */
+/* line 140, ../sass/partials/design/views/_photos.scss */
 .no-mq .photos-wrapper .left-image {
   width: 23.40426%;
   float: left;
@@ -913,7 +983,7 @@ main, header, footer, section, aside {
   margin-left: 0;
   clear: none;
 }
-/* line 119, ../sass/partials/design/views/_photos.scss */
+/* line 143, ../sass/partials/design/views/_photos.scss */
 .no-mq .photos-wrapper .right-photos {
   width: 74.46809%;
   float: right;
@@ -975,3 +1045,22 @@ a#snipcart-show-discount-box, .snipcart-overwrite .snip-btn.snip-btn--left,
 .snipcart-overwrite .snip-layout .snip-header {
   background: #f2eee4;
 }
+
+/*.snipcart-summary {
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            display: block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            a {
+                margin-left: 1.4em;
+                padding: 0;
+                text-decoration: none;
+            }
+        }
+    }
+}*/
