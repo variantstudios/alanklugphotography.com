@@ -24,7 +24,7 @@ layout: page
 {% assign type = site.brown-tones-foreign%}
 {% endif %}
 
-{% assign sorted = type | sort: 'order_number' %}
+{% assign sorted = type %}
   {% for post in sorted %}
       <div class="photo">
         {% if post.image_path %}

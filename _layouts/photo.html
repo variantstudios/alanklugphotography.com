@@ -3,6 +3,8 @@ layout: page
 ---
 <main>
   <section class="photo-wrapper wrap">
+
+      <a href="/{{ page.url | replace:'/',' ' | truncatewords: 1,"" }}" class="back" />
       <nav class="pagination" role="navigation">
         {% if page.previous %}
           <a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="older">Older</a>
