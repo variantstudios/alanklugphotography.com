@@ -904,21 +904,50 @@ main, header, footer, section, aside {
   font-family: "trajan-pro-3", serif;
 }
 
-/* line 15, ../sass/partials/design/views/_snipcart.scss */
-.snipcart-overwrite #snipcart-footer {
-  display: none;
-}
-
 /* line 20, ../sass/partials/design/views/_snipcart.scss */
 .snipcart-overwrite #snipcart-header #snipcart-title {
-  color: #50bcd0;
-  background: url("../images/snipcart-blue.png") no-repeat 0 center;
-  padding-left: 60px;
+  color: #f2eee4;
+  background: url(../images/logo.png) no-repeat 0 center;
+  padding-left: 200px;
 }
 
 /* line 26, ../sass/partials/design/views/_snipcart.scss */
 .snipcart-overwrite ul#snipcart-steps li span.snipcart-step-number, .snip-layout .snip-form__label,
 p.snip-step__label, h2.snip-product__name, p.snip-product__description, .snip-layout th,
-a#snipcart-show-discount-box, .snipcart-overwrite .snip-btn.snip-btn--left {
+a#snipcart-show-discount-box, .snipcart-overwrite .snip-btn.snip-btn--left,
+.snipcart-overwrite .snip-static__title, .snipcart-overwrite select#snip-expirationMonth,
+.snipcart-overwrite select#snip-expirationYear, .snipcart-overwrite select#snip-type,
+.snipcart-overwrite button.snip-btn.snip-btn--right {
   font-family: "trajan-pro-3", serif;
+}
+
+/* line 36, ../sass/partials/design/views/_snipcart.scss */
+.snipcart-overwrite .snip-layout .snip-header__total {
+  background: #525252;
+}
+/* line 38, ../sass/partials/design/views/_snipcart.scss */
+.snipcart-overwrite .snip-layout .snip-header__total .snip-header__total-label {
+  color: #111;
+  font-family: "trajan-pro-3", serif;
+}
+/* line 42, ../sass/partials/design/views/_snipcart.scss */
+.snipcart-overwrite .snip-layout .snip-header__total #snipcart-amount {
+  font-family: "trajan-pro-3", serif;
+}
+
+/* line 48, ../sass/partials/design/views/_snipcart.scss */
+.snip-layout .snip-ico {
+  color: #333;
+}
+
+/* line 52, ../sass/partials/design/views/_snipcart.scss */
+.snipcart-overwrite .snip-layout .snip-header__total {
+  padding: 0em 1em;
+  float: right;
+  margin-right: 2em;
+}
+
+/* line 57, ../sass/partials/design/views/_snipcart.scss */
+.snipcart-overwrite .snip-layout .snip-header {
+  background: #f2eee4;
 }
