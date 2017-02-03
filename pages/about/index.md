@@ -3,10 +3,11 @@ title: About Alan Klug Photography
 permalink: "/about/"
 description: About Alan Klug Photography.
 layout: page
+class: about
 ---
 !["Alan Klug"](/assets/images/alan-klug-head-shot.jpg)
-The photographs offered in this portfolio are hand printed by myself and limited to an edition of 250-300 images. They were made with a variety of medium and large format cameras exclusively on negative film, both color and black & white. Having worked at this for some twenty years it seems to me that specific brand names of equipment don't matter much; I'm not much of a camera buff. I believe strongly in three principles: 1) The old adage "F8 and be there", which means don't burden yourself with vast amounts of technique and equipment. Get out there and make pictures. 2) A photographer's most important tool is a very large trash can, and 3) Avoid looking for the next market; photograph what you care about.
+If there is a steady current in these images, I believe it is this: it is a search for a quiet alternative to the noise and hustle of modern living. Television, radio, social media, constant chatter. There is much to be revealed in silence, for lack of distraction, for concentration on a “lucid stillness” at the center, all essential for the creation of philosophy, painting, or poetry, and, I think, for the art of photography. The images have been variously described as “serene,” “reserved,” “quietly elegant.”
 
-The photographs are mounted and matted with archival materials (mattes are double, white ragboard) and are guaranteed. Please return within 30 days for a refund if for any reason you aren't pleased.
+I have been making darkroom photographs for over thirty years, but now, because darkroom materials are disappearing from the market, and because of some few health issues connected with constant exposure to chemicals, I have transitioned into archival pigment ink printing of my negatives onto fine art papers. This type of printing is capable of producing archival images of the highest museum quality and longevity. Many of my images, in fact, look better to me than their gelatin silver predecessors.
 
-All photographs in this portfolio are copyright of Alan Klug.
+Prints are limited to an edition of 250. Print-only prints are printed with a white border and signed, numbered and titled on the border. The rest are mounted and double matted white with archival materials, signed and titled on the matte, numbered verso. Our frame is a simple, medium dark wood 1 ¼” wide with regular picture glass. There is no extra charge for shipping in the lower 48 states.

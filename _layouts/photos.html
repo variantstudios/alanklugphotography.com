@@ -18,7 +18,12 @@ layout: page
 {% assign type = site.france%}
 {% elsif page.url contains "england"%}
 {% assign type = site.england%}
+{% elsif page.url contains "brown-tones-domestic"%}
+{% assign type = site.brown-tones-domestic%}
+{% elsif page.url contains "brown-tones-foreign"%}
+{% assign type = site.brown-tones-foreign%}
 {% endif %}
+
 {% assign sorted = type | sort: 'order_number' %}
   {% for post in sorted %}
       <div class="photo">

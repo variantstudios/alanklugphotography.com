@@ -6,6 +6,7 @@ layout: page
 <main>
   <section class="photo-wrapper wrap">
 
+
       <nav class="pagination" role="navigation">
         {% if page.previous %}
           <a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="older">Older</a>
@@ -15,13 +16,11 @@ layout: page
         {% endif %}
       </nav><!-- /.pagination -->
 
-
-    <div class="">
         <div class="photo clearfix">
               <img src="{{ page.image_path }}" alt="{{ page.title }}">
-          </div>
-    </div>
 
+          <span class="left">{{ page.title }}</span> <span class="right">{{ page.id_number }}</span>
+ </div>
     <div class="buy-now">
         {% assign photo-id = page.title |  replace:' ','-' | downcase | strip %}
 
