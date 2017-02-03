@@ -62,7 +62,6 @@ defaults:
       id_number:
       image_path:
       description:
-      order_number: 0
     scope:
       type: mexico
     values:
@@ -71,7 +70,6 @@ defaults:
       id_number:
       image_path:
       description:
-      order_number: 0
     scope:
       type: greece
     values:
@@ -80,7 +78,6 @@ defaults:
       id_number:
       image_path:
       description:
-      order_number: 0
     scope:
       type: italy-slovenia
     values:
@@ -89,7 +86,6 @@ defaults:
       id_number:
       image_path:
       description:
-      order_number: 0
     scope:
       type: france
     values:
@@ -98,7 +94,6 @@ defaults:
       id_number:
       image_path:
       description:
-      order_number: 0
     scope:
       type: england
     values:
@@ -107,7 +102,6 @@ defaults:
       id_number:
       image_path:
       description:
-      order_number: 0
     scope:
       type: brown-tones-foreign
     values:
@@ -116,7 +110,6 @@ defaults:
       id_number:
       image_path:
       description:
-      order_number: 0
     scope:
       type: brown-tones-domestic
     values:
@@ -125,7 +118,6 @@ defaults:
       id_number:
       image_path:
       description:
-      order_number: 0
 # typekit - Because we all need nice type faces.
 typekit: 'oty8wpk'
 
