@@ -5,22 +5,17 @@
 <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
 <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
 <script type="text/javascript">
-
-
 // init Masonry
 var $grid = $('.photos-wrapper').masonry({
 // options...
 itemSelector: '.photo',
 columnWidth: '.grid-sizer',
 transitionDuration: '0.2s',
-
 });
 // layout Masonry after each image loads
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
-
-
 // Photo gallery keyboard pagination controls
 document.onkeydown = function(e) {
      var newer = $('.newer').attr('href');
@@ -47,6 +42,24 @@ document.onkeydown = function(e) {
 </script>
 
 <script src="/assets/js/prod/scripts.js"></script>
+
+{% if page.url == "/" %}
+<script type="text/javascript">
+
+  // SUB PAGE HEADER API
+    $(document).ready(function() {
+        $.getJSON('/gallery.json').done(function(data){
+            var random = data.data[Math.floor(Math.random() * data.data.length)];
+            $(".hero-image").attr("src",random.header);
+            $(".hero-image").attr("title",random.title);
+            $(".hero-link").attr("alt",random.title);
+            $(".hero-link").attr("href",random.link);
+            console.log(random.header);
+        });
+    });
+  </script>
+  {% endif %}
+
 
 {% if site.google_analytics_tracking_id %}
   <!-- google analytics -->
