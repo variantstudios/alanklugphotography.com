@@ -1,0 +1,64 @@
+---
+layout: null
+sitemap: false
+
+---
+[
+{% for product in site.usa %}
+{
+"id_number": {{ product.id_number | jsonify }} ,
+"price": 45.00,
+"url": "{{ site.url }}/products.json"}
+, {% endfor %}
+
+{% for product in site.england %}
+{
+"id_number": {{ product.id_number | jsonify }} ,
+"price": 45.00,
+"url": "{{ site.url }}/products.json"}
+, {% endfor %}
+
+{% for product in site.brown-tones-domestic %}
+{
+"id_number": {{ product.id_number | jsonify }} ,
+"price": 45.00,
+"url": "{{ site.url }}/products.json"}
+, {% endfor %}
+
+{% for product in site.brown-tones-foreign %}
+{
+"id_number": {{ product.id_number | jsonify }} ,
+"price": 45.00,
+"url": "{{ site.url }}/products.json"}
+, {% endfor %}
+
+{% for product in site.greece %}
+{
+"id_number": {{ product.id_number | jsonify }} ,
+"price": 45.00,
+"url": "{{ site.url }}/products.json"}
+, {% endfor %}
+
+{% for product in site.mexico %}
+{
+"id_number": {{ product.id_number | jsonify }} ,
+"price": 45.00,
+"url": "{{ site.url }}/products.json"}
+, {% endfor %}
+
+{% for product in site.italy-slovenia %}
+{
+"id_number": {{ product.id_number | jsonify }} ,
+"price": 45.00,
+"url": "{{ site.url }}/products.json"}
+, {% endfor %}
+
+{% for product in site.france %}
+{
+"id_number": {{ product.id_number | jsonify }} ,
+"price": 45.00,
+"url": "{{ site.url }}/products.json"}
+{% unless forloop.last %},{% endunless %}
+{% endfor %}
+
+]

@@ -25,15 +25,18 @@ $grid.imagesLoaded().progress( function() {
 document.onkeydown = function(e) {
      var newer = $('.newer').attr('href');
      var older = $('.older').attr('href');
+     var back = $('.back').attr('href');
     switch (e.keyCode) {
         case 37:
             console.log('left');
             console.log(older);
             if((older) !== undefined){ location.href=older; };
             break;
-        // case 38:
-        //     console.log('up');
-        //     break;
+        case 38:
+            console.log('up');
+            console.log(back);
+            if((back) !== undefined){ location.href=back; };
+            break;
         case 39:
             console.log('right');
             console.log(newer);
