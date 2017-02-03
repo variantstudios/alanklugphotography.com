@@ -10,3 +10,18 @@
 .buy-now {
     text-align: center;
 }
+
+a.snipcart-add-item {
+    border: solid 1px #333;
+    padding: .5em .75em;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #333;
+    transition: ease-in-out all 600ms;
+    background: #f2eee4;
+    &:hover {
+        color: #f2eee4;
+        border: solid 1px #333;
+        background: #333;
+    }
+}
