@@ -5,18 +5,14 @@
 <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
 <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
 <script type="text/javascript">
+
+
 // init Masonry
 var $grid = $('.photos-wrapper').masonry({
 // options...
 itemSelector: '.photo',
-//percentPosition: true,
 columnWidth: '.grid-sizer',
-//columnWidth: 10,
-//gutter: 10,
-//fitWidth: true
-//layoutMode: 'masonry'
-//http://masonry.desandro.com/v2/docs/animating.html
-isAnimated: false
+transitionDuration: '0.2s',
 
 });
 // layout Masonry after each image loads
