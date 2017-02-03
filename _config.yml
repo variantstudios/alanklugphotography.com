@@ -1,7 +1,7 @@
 # Site settings
 title: "Alan Klug Photography"
 email: "team@variantstudios.com"
-description: "Alan Klug - photographer of Greece, Mexico, England, France and the US - photographys of Europe."
+description: "Alan Klug - photographer of Greece, Mexico, England, France and the US - photographs of Europe."
 baseurl: "" # the subpath of your site, e.g. /photos/
 url: "" # the base hostname & protocol for your site
 #timezone: America/Denver - Don't set for CloudCannon...for reasons.
@@ -14,9 +14,7 @@ uploads_dir: "assets/images"
 
 # Gems for plugins
 gems:
-
   - jekyll-paginate # Needed to add paginate on Jekyll ver 3+
-  - jekyll-paginate-category
   - jekyll-sitemap # Simple jekyll plugin that creates a sitemap.xml file and you can exclude files by adding 'sitemap:false' to the frontmatter of any file(s).
 
 # Permalinks
@@ -47,6 +45,12 @@ collections:
   england:
     output: true
     permalink: '/england/:title/'
+  brown-tones-foreign:
+    output: true
+    permalink: '/brown-tones-foreign/:title/'
+  brown-tones-domestic:
+    output: true
+    permalink: '/brown-tones-domestic/:title/'
 
 defaults:
   -
@@ -97,6 +101,24 @@ defaults:
       order_number: 0
     scope:
       type: england
+    values:
+      layout: photo
+      title:
+      id_number:
+      image_path:
+      description:
+      order_number: 0
+    scope:
+      type: brown-tones-foreign
+    values:
+      layout: photo
+      title:
+      id_number:
+      image_path:
+      description:
+      order_number: 0
+    scope:
+      type: brown-tones-domestic
     values:
       layout: photo
       title:

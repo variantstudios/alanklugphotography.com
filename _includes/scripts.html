@@ -32,14 +32,15 @@ document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
             console.log('left');
-            location.href=older;
+            console.log(older);
             if((older) !== undefined){ location.href=older; };
             break;
-        case 38:
-            console.log('up');
-            break;
+        // case 38:
+        //     console.log('up');
+        //     break;
         case 39:
             console.log('right');
+            console.log(newer);
             if((newer) !== undefined){ location.href=newer; };
             break;
     }

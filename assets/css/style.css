@@ -481,6 +481,32 @@ ul.pager li a:visited {
   display: none;
 }
 
+/* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
+.photo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 3, ../sass/partials/design/pages/_photos.scss */
+.photo .right {
+  float: right;
+}
+/* line 6, ../sass/partials/design/pages/_photos.scss */
+.photo .left {
+  float: left;
+}
+
+/* line 10, ../sass/partials/design/pages/_photos.scss */
+.buy-now {
+  text-align: center;
+}
+
+/* line 2, ../sass/partials/design/pages/_about.scss */
+body.about main img {
+  float: left;
+  margin: 0 1em 0 0;
+}
+
 /* line 1, ../sass/partials/design/regions/_footer.scss */
 .footer-wrapper {
   text-align: center;
@@ -870,4 +896,29 @@ main, header, footer, section, aside {
   margin-left: 0;
   margin-right: 0;
   clear: none;
+}
+
+/* line 2, ../sass/partials/design/views/_snipcart.scss */
+.snipcart-overwrite .snip-layout .snip-btn--highlight {
+  background: #f2eee4;
+  font-family: "trajan-pro-3", serif;
+}
+
+/* line 15, ../sass/partials/design/views/_snipcart.scss */
+.snipcart-overwrite #snipcart-footer {
+  display: none;
+}
+
+/* line 20, ../sass/partials/design/views/_snipcart.scss */
+.snipcart-overwrite #snipcart-header #snipcart-title {
+  color: #50bcd0;
+  background: url("../images/snipcart-blue.png") no-repeat 0 center;
+  padding-left: 60px;
+}
+
+/* line 26, ../sass/partials/design/views/_snipcart.scss */
+.snipcart-overwrite ul#snipcart-steps li span.snipcart-step-number, .snip-layout .snip-form__label,
+p.snip-step__label, h2.snip-product__name, p.snip-product__description, .snip-layout th,
+a#snipcart-show-discount-box, .snipcart-overwrite .snip-btn.snip-btn--left {
+  font-family: "trajan-pro-3", serif;
 }

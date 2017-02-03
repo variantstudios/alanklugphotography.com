@@ -1,0 +1,33 @@
+
+.snipcart-overwrite .snip-layout .snip-btn--highlight {
+
+  background: $site-bg;
+  font-family: $font-family;
+}
+
+
+//remove powered by
+.snipcart-overwrite #snipcart-footer #snipcart-powered {
+    //display: none;
+}
+
+//remove footer
+.snipcart-overwrite #snipcart-footer {
+    display: none;
+}
+
+//logo
+.snipcart-overwrite #snipcart-header #snipcart-title {
+    color: #50bcd0;
+    background: url('../images/snipcart-blue.png') no-repeat 0 center;
+    padding-left: 60px;
+}
+
+.snipcart-overwrite ul#snipcart-steps li span.snipcart-step-number, .snip-layout .snip-form__label,
+p.snip-step__label, h2.snip-product__name, p.snip-product__description, .snip-layout th,
+a#snipcart-show-discount-box, .snipcart-overwrite .snip-btn.snip-btn--left {
+    font-family: $font-family;
+}
+.snip-layout th {
+
+}

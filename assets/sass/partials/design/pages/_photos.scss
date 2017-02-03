@@ -1,0 +1,12 @@
+.photo {
+    @include clearfix;
+    .right {
+        float: right;
+    }
+    .left {
+        float: left;
+    }
+}
+.buy-now {
+    text-align: center;
+}
