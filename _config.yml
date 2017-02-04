@@ -12,6 +12,9 @@ author.email: "team@variantstudios.com"
 #CloudCannon defaults
 uploads_dir: "assets/images"
 
+# Cloudinary
+cloudinaryintro: https://res.cloudinary.com/variant-studios/image/fetch
+
 # Gems for plugins
 gems:
   - jekyll-paginate # Needed to add paginate on Jekyll ver 3+
