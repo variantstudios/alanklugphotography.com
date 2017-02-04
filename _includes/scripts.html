@@ -55,13 +55,13 @@ Snipcart.subscribe('item.added', function (item) {
 });
 Snipcart.subscribe('cart.ready', function (data) {
     console.log(data.order);
-    if (data.order.items.length != 0) {
-        //console.log('yes');
-        $(".snipcart-summary").css('display', 'block');
-    } else {
-        //console.log('no');
-        $(".snipcart-summary").css('display', 'none');
-    }
+    // if (data.order.items.length != 0) {
+    //     //console.log('yes');
+    //     $(".snipcart-summary").css('display', 'block');
+    // } else {
+    //     //console.log('no');
+    //     $(".snipcart-summary").css('display', 'none');
+    // }
 });
 
 // Snipcart.subscribe('cart.closed', function() {
