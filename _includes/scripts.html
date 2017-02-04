@@ -55,14 +55,14 @@ Snipcart.subscribe('item.added', function (item) {
 });
 Snipcart.subscribe('cart.ready', function (data) {
     if(data) {
-    console.log(data.order);
-    if (data.order.items.length != 0) {
+        console.log(data.order);
+        if (data.order.items.length != 0) {
         //console.log('yes');
-        $(".snipcart-summary").css('display', 'block');
-    } else {
+            $(".snipcart-summary").css('display', 'block');
+        } else {
         //console.log('no');
-        $(".snipcart-summary").css('display', 'none');
-    }
+            $(".snipcart-summary").css('display', 'none');
+        }
     }
 });
 
