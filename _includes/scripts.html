@@ -54,7 +54,7 @@ Snipcart.subscribe('item.added', function (item) {
     $(".snipcart-summary").css('display', 'block');
 });
 Snipcart.subscribe('cart.ready', function (data) {
-    if(data) {
+    if(data !== undefined) {
         console.log(data.order);
         if (data.order.items.length != 0) {
         //console.log('yes');
