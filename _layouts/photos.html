@@ -29,7 +29,8 @@ layout: page
       <div class="photo">
         {% if post.image_path %}
           <a href="{{ post.url }}">
-              <img src="{{ post.image_path }}" alt="{{ post.title }}">
+              <!--<img src="{{ post.image_path }}" alt="{{ post.title }}">-->
+              <img class="gallery-img lrg" src="{{ site.cloudinaryintro }}/w_360,c_fill/{{ site.url }}/{{ post.image_path }}" alt="{{ post.title }}" itemprop="image">
               </a>
         {% endif %}
       </div>
@@ -37,8 +38,8 @@ layout: page
 
 </section>
 
-<img
-              src="{{ site.cloudinaryintro }}/c_limit,w_900,q_auto,f_auto/{{ site.url }}/{{ post.image_path }}"
-              srcset="{{ site.cloudinaryintro }}/c_limit,w_320,q_auto,f_auto/{{ site.url }}/{{ post.image_path }} 320w,{{ site.cloudinaryintro }}/c_limit,w_640,q_auto,f_auto/{{ site.url }}/{{ post.image_path }} 640w,{{ site.cloudinaryintro }}/c_limit,w_960,q_auto,f_auto/{{ site.url }}/{{ post.image_path }} 960w,{{ site.cloudinaryintro }}/c_limit,w_1280,q_auto,f_auto/{{ site.url }}/{{ post.image_path }} 1280w,{{ site.cloudinaryintro }}/c_limit,w_1600,q_auto,f_auto/{{ site.url }}/{{ post.image_path }} 1600w"
-              sizes="100%"
-              alt="{{ gallery.title }}" title="{{ gallery.title }}" />
+<!--<img-->
+<!--              src="{{ site.cloudinaryintro }}/c_limit,w_900,q_auto,f_auto/{{ site.url }}/{{ post.image_path }}"-->
+<!--              srcset="{{ site.cloudinaryintro }}/c_limit,w_320,q_auto,f_auto/{{ site.url }}/{{ post.image_path }} 320w,{{ site.cloudinaryintro }}/c_limit,w_640,q_auto,f_auto/{{ site.url }}/{{ post.image_path }} 640w,{{ site.cloudinaryintro }}/c_limit,w_960,q_auto,f_auto/{{ site.url }}/{{ post.image_path }} 960w,{{ site.cloudinaryintro }}/c_limit,w_1280,q_auto,f_auto/{{ site.url }}/{{ post.image_path }} 1280w,{{ site.cloudinaryintro }}/c_limit,w_1600,q_auto,f_auto/{{ site.url }}/{{ post.image_path }} 1600w"-->
+<!--              sizes="100%"-->
+<!--              alt="{{ gallery.title }}" title="{{ gallery.title }}" />-->
