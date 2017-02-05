@@ -33,6 +33,7 @@
                 opacity: 1;
             }
         }
+
     }
     .photo {
             text-align: center;
@@ -42,7 +43,24 @@
             }
     }
 }
-
+.back {
+    display: block;
+    margin: 0 auto .8em auto;
+    height: 20px;
+    width: 20px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transition: all 4s; /* Safari */
+    transition: all .5s;
+    background: url(/assets/images/icons/arrow-up.svg) left 0 no-repeat;
+    background-size: contain;
+    //margin-left: -30px;
+    opacity: 0.2;
+    &:hover {
+        opacity: 1;
+    }
+}
 .photos-wrapper {
 
     /* clear fix */

@@ -844,17 +844,38 @@ main, header, footer, section, aside {
 .photo-wrapper nav.pagination .older:hover {
   opacity: 1;
 }
-/* line 37, ../sass/partials/design/views/_photos.scss */
+/* line 38, ../sass/partials/design/views/_photos.scss */
 .photo-wrapper .photo {
   text-align: center;
 }
-/* line 39, ../sass/partials/design/views/_photos.scss */
+/* line 40, ../sass/partials/design/views/_photos.scss */
 .photo-wrapper .photo img {
   margin: 0 auto;
   border: solid 20px #fff;
 }
 
 /* line 46, ../sass/partials/design/views/_photos.scss */
+.back {
+  display: block;
+  margin: 0 auto .8em auto;
+  height: 20px;
+  width: 20px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: all 4s;
+  /* Safari */
+  transition: all .5s;
+  background: url(/assets/images/icons/arrow-up.svg) left 0 no-repeat;
+  background-size: contain;
+  opacity: 0.2;
+}
+/* line 60, ../sass/partials/design/views/_photos.scss */
+.back:hover {
+  opacity: 1;
+}
+
+/* line 64, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper {
   /* clear fix */
   /* ---- .grid-item ---- */
@@ -872,13 +893,13 @@ main, header, footer, section, aside {
     border: solid 10px #fff;
   }*/
 }
-/* line 49, ../sass/partials/design/views/_photos.scss */
+/* line 67, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper:after {
   content: '';
   display: block;
   clear: both;
 }
-/* line 71, ../sass/partials/design/views/_photos.scss */
+/* line 89, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .photo {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -890,45 +911,45 @@ main, header, footer, section, aside {
   }*/
 }
 @media (min-width: 800px) {
-  /* line 71, ../sass/partials/design/views/_photos.scss */
+  /* line 89, ../sass/partials/design/views/_photos.scss */
   .photos-wrapper .photo {
     width: 30%;
     padding: 10px 0 10px 20px;
   }
 }
 @media (max-width: 700px) {
-  /* line 71, ../sass/partials/design/views/_photos.scss */
+  /* line 89, ../sass/partials/design/views/_photos.scss */
   .photos-wrapper .photo {
     width: 48%;
     padding: 10px 0 10px 20px;
   }
 }
 @media (max-width: 400px) {
-  /* line 71, ../sass/partials/design/views/_photos.scss */
+  /* line 89, ../sass/partials/design/views/_photos.scss */
   .photos-wrapper .photo {
     width: 100%;
   }
 }
-/* line 94, ../sass/partials/design/views/_photos.scss */
+/* line 112, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .photo img {
   width: 100%;
   height: auto;
 }
-/* line 100, ../sass/partials/design/views/_photos.scss */
+/* line 118, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .photo img {
   display: block;
   max-width: 100%;
   border: solid 10px #fff;
 }
-/* line 107, ../sass/partials/design/views/_photos.scss */
+/* line 125, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .photos-item {
   padding-bottom: 2em;
 }
-/* line 111, ../sass/partials/design/views/_photos.scss */
+/* line 129, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos h3 {
   margin-top: 0;
 }
-/* line 114, ../sass/partials/design/views/_photos.scss */
+/* line 132, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos .person {
   width: 25px;
   height: 25px;
@@ -936,29 +957,29 @@ main, header, footer, section, aside {
   margin-bottom: -5px;
   border: 2px solid #333333;
 }
-/* line 121, ../sass/partials/design/views/_photos.scss */
+/* line 139, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul {
   list-style: none;
   padding: 0;
 }
-/* line 124, ../sass/partials/design/views/_photos.scss */
+/* line 142, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul li {
   display: inline-block;
 }
-/* line 126, ../sass/partials/design/views/_photos.scss */
+/* line 144, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul li.tag-label {
   background: #333333;
   padding: 2px 5px;
   border-radius: 3px;
   font-size: .8rem;
 }
-/* line 131, ../sass/partials/design/views/_photos.scss */
+/* line 149, ../sass/partials/design/views/_photos.scss */
 .photos-wrapper .right-photos ul li.tag-label a, .photos-wrapper .right-photos ul li.tag-label a:visited {
   color: #f1f1f1;
   text-decoration: none;
 }
 @media (min-width: 50em) {
-  /* line 140, ../sass/partials/design/views/_photos.scss */
+  /* line 158, ../sass/partials/design/views/_photos.scss */
   .photos-wrapper .left-image {
     width: 23.40426%;
     float: left;
@@ -966,7 +987,7 @@ main, header, footer, section, aside {
     margin-left: 0;
     clear: none;
   }
-  /* line 143, ../sass/partials/design/views/_photos.scss */
+  /* line 161, ../sass/partials/design/views/_photos.scss */
   .photos-wrapper .right-photos {
     width: 74.46809%;
     float: right;
@@ -975,7 +996,7 @@ main, header, footer, section, aside {
     clear: none;
   }
 }
-/* line 140, ../sass/partials/design/views/_photos.scss */
+/* line 158, ../sass/partials/design/views/_photos.scss */
 .no-mq .photos-wrapper .left-image {
   width: 23.40426%;
   float: left;
@@ -983,7 +1004,7 @@ main, header, footer, section, aside {
   margin-left: 0;
   clear: none;
 }
-/* line 143, ../sass/partials/design/views/_photos.scss */
+/* line 161, ../sass/partials/design/views/_photos.scss */
 .no-mq .photos-wrapper .right-photos {
   width: 74.46809%;
   float: right;
