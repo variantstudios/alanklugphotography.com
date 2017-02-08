@@ -1,7 +1,7 @@
 ---
 title: Contact
 permalink: /contact/
-description:
+description: Contact Alan Klug Photography.
 layout: page
 ---
 
