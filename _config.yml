@@ -11,7 +11,7 @@ version: "3.2.1" # the version of jekyll
 uploads_dir: "assets/images"
 
 # Cloudinary
-cloudinaryintro: https://res.cloudinary.com/variant-studios/image/fetch
+cloudinaryintro: 'https://res.cloudinary.com/variant-studios/image/fetch'
 
 # Gems for plugins
 gems:
