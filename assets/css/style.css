@@ -481,6 +481,15 @@ ul.pager li a:visited {
   display: none;
 }
 
+/* line 77, ../sass/partials/design/blocks/_main-navigation.scss */
+.snipcart-summary {
+  background: url(/assets/images/icons/cart.svg) left center no-repeat;
+  background-size: 20px 20px;
+  /*a {
+      margin-right: .5em;
+  }*/
+}
+
 /* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 .photo:after {
   content: "";
