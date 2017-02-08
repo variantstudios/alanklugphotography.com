@@ -1,7 +1,7 @@
 ---
 layout: photo
 title: Venice
-id_number: 70
+id_number: 701
 image_path: /assets/images/gallery/italy-slovenia/701--venice.jpg
-description: ''
+description:
 ---
