@@ -1,7 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/prod/jquery-1-11-1.min.js"><\/script>')</script>
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="{{ site.snipcart-key }}"></script>
-
+{% if page.layout == 'photos' %}
 <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
 <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
 <script type="text/javascript">
@@ -40,54 +40,27 @@ document.onkeydown = function(e) {
             break;
     }
 };
-
-$(".snipcart-summary").css('display', 'none');
-
-Snipcart.subscribe('item.added', function (item) {
-    console.log("added");
-    $(".snipcart-summary").css('display', 'block');
-});
-Snipcart.subscribe('cart.ready', function (data) {
-    if(data.order !== undefined) {
-        console.log(data.order);
-        if (data.order.items.length != 0) {
-        //console.log('yes');
-            $(".snipcart-summary").css('display', 'block');
-        } else {
-        //console.log('no');
-            $(".snipcart-summary").css('display', 'none');
-        }
-    }
-});
-
-// Snipcart.subscribe('cart.closed', function() {
-//     Snipcart.subscribe('cart.ready', function (data) {
-//         console.log(data.order);
-//         if (data.order.items.length != 0) {
-//             console.log('yes');
-//             $(".snipcart-summary").css('display', 'block');
-//         } else {
-//             console.log('no');
-//             $(".snipcart-summary").css('display', 'none');
-//         }
-//     });
-// });
 </script>
+{% endif %}
 
 <script src="/assets/js/prod/scripts.js"></script>
 
 {% if page.url == "/" %}
 <script type="text/javascript">
+var cloudinaryintro = "{{ site.cloudinaryintro }}";
+var siteurl = "{{ site.url }}";
+var width = "{{site.cloudinaryLG}}";
 
   // SUB PAGE HEADER API
     $(document).ready(function() {
         $.getJSON('/gallery.json').done(function(data){
             var random = data.data[Math.floor(Math.random() * data.data.length)];
-            $(".hero-image").attr("src",random.header);
+
+            $(".hero-image").attr("src",cloudinaryintro + '/w_' + width + ',c_fill/' + siteurl + '/' + random.header);
             $(".hero-image").attr("title",random.title);
             $(".hero-link").attr("alt",random.title);
             $(".hero-link").attr("href",random.link);
-            console.log(random.header);
+            //console.log(random.header);
         });
     });
   </script>

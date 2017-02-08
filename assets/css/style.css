@@ -529,6 +529,11 @@ a.snipcart-add-item:hover {
   background: #333;
 }
 
+/* line 29, ../sass/partials/design/pages/_photos.scss */
+.photo-info {
+  margin-top: .6em;
+}
+
 /* line 2, ../sass/partials/design/pages/_about.scss */
 body.about main img {
   float: left;
@@ -597,6 +602,7 @@ body.about main img {
     margin-left: 0;
     clear: none;
     text-align: left;
+    margin: 0;
   }
 }
 /* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
@@ -607,9 +613,10 @@ body.about main img {
   margin-left: 0;
   clear: none;
   text-align: left;
+  margin: 0;
 }
 @media (min-width: 50em) {
-  /* line 21, ../sass/partials/design/regions/_footer.scss */
+  /* line 22, ../sass/partials/design/regions/_footer.scss */
   .footer-wrapper .right {
     width: 50%;
     float: right;
@@ -617,6 +624,7 @@ body.about main img {
     margin-right: 0;
     clear: none;
     text-align: right;
+    margin: 0;
   }
 }
 /* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
@@ -627,11 +635,17 @@ body.about main img {
   margin-right: 0;
   clear: none;
   text-align: right;
+  margin: 0;
+}
+
+/* line 30, ../sass/partials/design/regions/_footer.scss */
+.wrap.site-footer {
+  margin-top: 1em;
 }
 
 /* line 12, ../sass/partials/design/regions/_header.scss */
 .header-wrapper {
-  padding: 1em 0;
+  padding: .5em 0 1em 0;
 }
 
 /* line 1, ../sass/partials/design/regions/_main.scss */
@@ -649,7 +663,7 @@ body.about main img {
 
 /* line 9, ../sass/partials/design/regions/_main.scss */
 main {
-  padding: 2em 0;
+  padding: 0em 0;
 }
 /* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 main:after {
@@ -767,6 +781,8 @@ main, header, footer, section, aside {
 .front img.hero-image {
   margin: 0 auto;
   border: solid 20px #fff;
+  text-align: center;
+  display: block;
 }
 
 /* line 2, ../sass/partials/design/views/_team.scss */

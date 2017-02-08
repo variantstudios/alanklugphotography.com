@@ -16,12 +16,17 @@
       @include breakpoint($bp-medium, $no-query: '.no-mq') {
         @include grid-span(6, 1, $gutter:0);
         text-align: left;
+        margin: 0;
       }
   }
   .right {
       @include breakpoint($bp-medium, $no-query: '.no-mq') {
         @include grid-span(6, 7, $gutter:0);
         text-align: right;
+        margin: 0;
       }
   }
+}
+.wrap.site-footer {
+    margin-top: 1em;
 }
