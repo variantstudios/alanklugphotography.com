@@ -1,6 +1,8 @@
 ---
 title: Contact
-permalink: "/contact/"
-description: Contact page description.
+permalink: /contact/
+description:
 layout: page
 ---
+
+
