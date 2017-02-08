@@ -12,6 +12,8 @@ uploads_dir: "assets/images"
 
 # Cloudinary
 cloudinaryintro: 'https://res.cloudinary.com/variant-studios/image/fetch'
+cloudinaryLG: '640'
+cloudinarySM: '320'
 
 # Gems for plugins
 gems:
