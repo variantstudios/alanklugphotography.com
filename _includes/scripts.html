@@ -17,6 +17,10 @@ itemSelector: '.photo',
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
+</script>
+{% endif %}
+{% if page.layout == 'photo' %}
+<script type="text/javascript">
 // Photo gallery keyboard pagination controls
 document.onkeydown = function(e) {
      var newer = $('.newer').attr('href');
@@ -42,9 +46,7 @@ document.onkeydown = function(e) {
 };
 </script>
 {% endif %}
-
 <script src="/assets/js/prod/scripts.js"></script>
-
 {% if page.url == "/" %}
 <script type="text/javascript">
 var cloudinaryintro = "{{ site.cloudinaryintro }}";
