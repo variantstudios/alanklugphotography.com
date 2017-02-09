@@ -481,13 +481,15 @@ ul.pager li a:visited {
   display: none;
 }
 
-/* line 77, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 78, ../sass/partials/design/blocks/_main-navigation.scss */
 .snipcart-summary {
+  display: block;
   background: url(/assets/images/icons/cart.svg) left center no-repeat;
   background-size: 20px 20px;
-  /*a {
-      margin-right: .5em;
-  }*/
+}
+/* line 79, ../sass/partials/design/blocks/_main-navigation.scss */
+.snipcart-summary.snipcart-summary-empty {
+  display: none;
 }
 
 /* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */

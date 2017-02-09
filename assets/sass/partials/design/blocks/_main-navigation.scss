@@ -74,10 +74,12 @@
   display: none;
 }
 
+
 .snipcart-summary {
+    &.snipcart-summary-empty {
+        display: none;
+    }
+    display: block;
     background: url(/assets/images/icons/cart.svg) left center  no-repeat;
     background-size: 20px 20px;
-    /*a {
-        margin-right: .5em;
-    }*/
 }
