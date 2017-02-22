@@ -1,7 +1,9 @@
 ---
 layout: photo
-title: "Cypresses"
+title: Cypresses
 id_number: 1073
-image_path: /assets/images/gallery/brown-tones-domestic/26--1073--cypresses.jpg
-description: ''
+image_path: /assets/images/gallery/brown-tones-domestic/26--1073-Cypresses.jpg
+description:
 ---
+
+
