@@ -68,7 +68,9 @@ var width = "{{site.cloudinaryLG}}";
   </script>
   {% endif %}
 
-
+{% if page.permalink == "/contact/" %}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+{% endif %}
 {% if site.google_analytics_tracking_id %}
   <!-- google analytics -->
   <script>
