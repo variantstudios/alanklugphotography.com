@@ -3,7 +3,7 @@ title: "Alan Klug Photography"
 email: "team@variantstudios.com"
 description: "Alan Klug - photographer of Greece, Mexico, England, France and the US - photographs of Europe."
 baseurl: "" # the subpath of your site, e.g. /photos/
-url: "http://important-ship.cloudvent.net" # the base hostname & protocol for your site
+url: "https://www.alanklugphotography.com" # the base hostname & protocol for your site
 #timezone: America/Denver - Don't set for CloudCannon...for reasons.
 version: "3.2.1" # the version of jekyll
 
@@ -125,7 +125,7 @@ defaults:
 typekit: 'oty8wpk'
 
 # Google Analytics - What site isn't using it?!
-google_analytics_tracking_id: #new: UA-80029-47 - old: UA-34283494-1
+google_analytics_tracking_id: 'UA-80029-47' #new: UA-80029-47 - old: UA-34283494-1
 
 #Snipcart's Public Key
 snipcart-key: 'NWQ5M2M0YjAtMzAxNi00MTRhLTk1ZTgtNzA2YjEwNTJmMzFiNjM2MjA3OTQ5NjY3ODUwNjM2'

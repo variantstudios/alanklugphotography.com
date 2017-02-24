@@ -1,29 +1,12 @@
 ---
 layout: default
 ---
- {% comment %}
-<main>
-  <section class="wrap">
-    <h1 class="pagetitle">{{ page.title }}</h1>
-    <h2 class="subtitle">{{ page.subtitle }}</h2>
-    <div>{{ content }}</div>
-    {% if page.url contains "contact" %}
-      {% include contact-form.html %}
-    {% endif %}
-  </section>
-</main>
-{% endcomment %}
 <main>
    {% include sidebar.html %}
   <section class="wrap desktop-right">
-    <!-- <h1 class="pagetitle">{{ page.title }}</h1>
-    {% if page.subtitle %}
-      <h2 class="subtitle">{{ page.subtitle }}</h2>
-    {% endif %} -->
     <div>{{ content }}</div>
     {% if page.url contains "contact" %}
       {% include contact-form.html %}
     {% endif %}
   </section>
-
 </main>

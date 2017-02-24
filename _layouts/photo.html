@@ -4,7 +4,6 @@ layout: page
 <main>
   <section class="photo-wrapper wrap">
  <a href="/{{ page.url | replace:'/',' ' | truncatewords: 1,"" }}" title="" class="back">Back to Gallery</a>
-
       <nav class="pagination" role="navigation">
         {% if page.previous %}
           <a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="older">Older</a>
@@ -13,7 +12,6 @@ layout: page
           <a href="{{ page.next.url }}" title="{{ page.next.title }}" class="newer">Newer</a>
         {% endif %}
       </nav><!-- /.pagination -->
-
         <div class="photo clearfix">
               <img src="{{ site.cloudinaryintro }}/w_{{site.cloudinaryLG}},c_fill/{{ site.url }}/{{ page.image_path }}" alt="{{ page.title }}" itemprop="image">
           <div class="photo-info">
