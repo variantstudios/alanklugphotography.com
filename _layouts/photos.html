@@ -1,9 +1,6 @@
 ---
 layout: page
 ---
-
-<!-- <section class="photos-preface">{{ content }}</section> -->
-
 <section class="photos-wrapper">
 <div class="grid-sizer"></div>
 {% if page.url contains "usa" %}
@@ -23,17 +20,14 @@ layout: page
 {% elsif page.url contains "brown-tones-foreign"%}
 {% assign type = site.brown-tones-foreign%}
 {% endif %}
-
 {% assign sorted = type %}
   {% for post in sorted %}
       <div class="photo">
         {% if post.image_path %}
           <a href="{{ post.url }}">
-              <!--<img src="{{ post.image_path }}" alt="{{ post.title }}">-->
               <img class="gallery-img lrg" src="{{ site.cloudinaryintro }}/w_{{site.cloudinarySM}},c_fill/{{ site.url }}/{{ post.image_path }}" alt="{{ post.title }}" itemprop="image">
               </a>
         {% endif %}
       </div>
   {% endfor %}
-
 </section>

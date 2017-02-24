@@ -15,11 +15,6 @@ layout: page
         </div>
         <div class="right-photos">
           <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-
-          <!-- {% for cat in post.categories %}
-            <p class="category-label">Category: <a href="{{ cat | prepend: '/photos/' | append: '/' }}">{{ cat | replace: '-', ' ' | capitalize }}</a></p>
-          {% endfor %} -->
-          
           {% if post.description %}
             <p>{{ post.description }}</p>
           {% endif %}
