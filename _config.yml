@@ -128,6 +128,6 @@ typekit: 'oty8wpk'
 google_analytics_tracking_id: 'UA-80029-47' #new: UA-80029-47 - old: UA-34283494-1
 
 #Snipcart's Public Key
-snipcart-key: 'NWQ5M2M0YjAtMzAxNi00MTRhLTk1ZTgtNzA2YjEwNTJmMzFiNjM2MjA3OTQ5NjY3ODUwNjM2'
+snipcart-key: 'YzIxZGU4YjMtZDI4Zi00N2FkLWFiODgtOTU3N2VkNWM2ODcxNjM2MjA3OTQ5NjY3ODUwNjM2'
 
 exclude: ["vendor","node_modules","package.json","Gemfile","gulpfile.js","*.scss"]
