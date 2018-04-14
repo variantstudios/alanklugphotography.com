@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /photos/
 url: "https://www.alanklugphotography.com" # the base hostname & protocol for your site
 #timezone: America/Denver - Don't set for CloudCannon...for reasons.
 version: "3.2.1" # the version of jekyll
+collections_dir: "Variant Studios"
 
 #CloudCannon defaults
 uploads_dir: "assets/images"
