@@ -1,8 +1,8 @@
 ---
 layout: photo
-title: Framed Photograph
-id_number: 1068
-image_path: /assets/images/framed-photograph.jpg
+title: To the Sea
+id_number: 1053
+image_path: /assets/images/1053-to-the-sea.jpg
 description:
 ---
 
